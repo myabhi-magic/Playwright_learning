@@ -12,6 +12,7 @@ test ('file Upload cases', async() => {
     // Single file upload
     await page.locator("input[name='file']").setInputFiles("C:/Users/abhinav.saxena/Downloads/dummy.pdf");
 
+    // Wait for timeout
     await page.waitForTimeout(5000);
     browser.close();
 
